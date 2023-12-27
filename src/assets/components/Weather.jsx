@@ -24,7 +24,7 @@ const Weather = ({ weatherData }) => {
               </div>
             </div>
 
-            <div className="w-1/2 flex flex-col justify-between items-end">
+            <div className="w-1/2 flex flex-col justify-between items-end px-2">
               <div>
                 <img
                   src={`http://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`}
@@ -36,19 +36,19 @@ const Weather = ({ weatherData }) => {
                 <div className="flex flex-col  justify-evenly gap-y-2 my-4  text-xs items-end">
                   <div className="flex gap-x-8 ">
                     <p>Feels like </p>
-                    <p className="font-bold w-20">
+                    <p className="font-bold ">
                       {weatherData.main.feels_like.toFixed()} °C
                     </p>
                   </div>{" "}
                   <div className="flex justify-between gap-x-8">
                     <p>Humidity </p>
-                    <p className="font-bold w-20">
+                    <p className="font-bold ">
                       {weatherData.main.humidity} %
                     </p>
                   </div>
                   <div className="flex justify-between gap-x-8">
                     <p>Wind </p>
-                    <p className="font-bold w-20">
+                    <p className="font-bold ">
                       {weatherData.wind.speed.toFixed()} KPH
                     </p>
                   </div>
